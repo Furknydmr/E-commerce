@@ -31,6 +31,7 @@ const RegisterScreen = () => {
         <TextInput
           style={styles.input}
           placeholder="Ad Soyad"
+          placeholderTextColor="#5C635A"
           onChangeText={(text) => setName(text)}
           value={name}
         />
@@ -40,6 +41,7 @@ const RegisterScreen = () => {
         <TextInput
           style={styles.input}
           placeholder="E-posta"
+          placeholderTextColor="#5C635A"
           keyboardType="email-address"
           onChangeText={(text) => setEmail(text)}
           value={email}
@@ -50,6 +52,7 @@ const RegisterScreen = () => {
         <TextInput
           style={styles.input}
           placeholder="Şifre"
+          placeholderTextColor="#5C635A"
           secureTextEntry
           onChangeText={(text) => setPassword(text)}
           value={password}
@@ -60,6 +63,7 @@ const RegisterScreen = () => {
         <TextInput
           style={styles.input}
           placeholder="Şifre Onayı"
+          placeholderTextColor="#5C635A"
           secureTextEntry
           onChangeText={(text) => setPasswordConfirm(text)}
           value={passwordConfirm}
@@ -70,6 +74,7 @@ const RegisterScreen = () => {
         <TextInput
           style={styles.input}
           placeholder="Telefon"
+          placeholderTextColor="#5C635A"
           keyboardType="phone-pad"
           onChangeText={(text) => setPhone(text)}
           value={phone}
@@ -80,6 +85,7 @@ const RegisterScreen = () => {
         <TextInput
           style={styles.input}
           placeholder="Adres"
+          placeholderTextColor="#5C635A"
           onChangeText={(text) => setAdress(text)}
           value={adress}
         />
@@ -140,6 +146,7 @@ const styles = StyleSheet.create({
     paddingHorizontal: 15,
     fontSize: 16,
     backgroundColor: '#fff',
+    color: '#000000',
   },
   button: {
     height: 50,
