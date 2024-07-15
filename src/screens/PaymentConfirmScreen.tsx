@@ -18,6 +18,7 @@ const PaymentConfirmScreen = () => {
         style={styles.input}
         placeholder="buraya giriniz"
         keyboardType="numeric"
+        placeholderTextColor="#5C635A"
         maxLength={6}
         value={otp}
         onChangeText={setOtp}
@@ -49,6 +50,7 @@ const styles = StyleSheet.create({
     borderRadius: 8,
     backgroundColor: '#fff',
     fontSize: 16,
+    color: '#000000',
   },
   text:{
     fontWeight:'bold',
