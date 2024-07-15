@@ -4,9 +4,12 @@ import React from 'react'
 import { useAppNavigation } from '../navigator/hooks';
 import { useRoute } from '@react-navigation/native';
 
+import { formatDate } from '../utils/CartUtils';
+
 const ConfirmScreen = () => {
   const route = useRoute();
   const { date,cardNumber, totalAmount } = route.params;
+  const formattedDate = formatDate(date);
   
     const navigation = useAppNavigation();
   return (
@@ -18,7 +21,7 @@ const ConfirmScreen = () => {
 
       <View style={styles.orderDetails}>
         <Text style={styles.subtitle}>Sipariş Detayları</Text>
-        <Text style={styles.detail}>Tarih:{date} </Text>
+        <Text style={styles.detail}>Tarih:{formattedDate} </Text>
         <Text style={styles.detail}>Kart Numarası: {cardNumber} </Text>
         <Text style={styles.detail}>Toplam Tutar:{totalAmount}₺</Text>
       </View>
