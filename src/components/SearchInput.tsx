@@ -6,6 +6,7 @@ const SearchInput = ({ value, onChangeText }) => {
     <TextInput
       style={styles.searchBar}
       placeholder="Ürün ara..."
+      placeholderTextColor="#5C635A"
       value={value}
       onChangeText={onChangeText}
     />
@@ -22,6 +23,7 @@ const styles = StyleSheet.create({
     paddingHorizontal: 10,
     margin: 10,
     backgroundColor: '#fff',
+    color: '#000000',
   },
 });
 
