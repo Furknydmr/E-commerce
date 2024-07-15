@@ -53,6 +53,7 @@ const styles = StyleSheet.create({
         fontSize: 24,
         fontWeight: 'bold',
         marginBottom: 8,
+        color: '#000000',
       },
       message: {
         fontSize: 16,
@@ -72,9 +73,11 @@ const styles = StyleSheet.create({
         fontSize: 20,
         fontWeight: 'bold',
         marginBottom: 8,
+        color: '#000000',
       },
       detail: {
         fontSize: 16,
         marginVertical: 4,
+        color: '#333333',
       },
 })
