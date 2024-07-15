@@ -74,7 +74,7 @@ const ProductDetailsScreen: React.FC = () => {
         <TouchableOpacity style={styles.backButton} onPress={() => navigation.goBack()}>
           <Text style={styles.buttonText}>Geri</Text>
         </TouchableOpacity>
-        <TouchableOpacity style={styles.addButton} onPress={() => handleAddToCart(product.id)}>
+        <TouchableOpacity style={styles.addButton} onPress={() => handleAddToCart(product.id,product.name)}>
           <Text style={styles.buttonText}>Sepete Ekle</Text>
         </TouchableOpacity>
       </View>
