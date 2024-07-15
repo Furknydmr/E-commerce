@@ -40,6 +40,7 @@ const ProductGrid = ({ products }) => {
       renderItem={renderProduct}
       keyExtractor={(item) => item.id}
       numColumns={2}
+      contentContainerStyle={styles.flatListContent}
     />
   );
 };
@@ -97,5 +98,8 @@ const styles = StyleSheet.create({
     color: '#fff',
     fontSize: 24,
     fontWeight: 'bold',
+  },
+  flatListContent: {
+    paddingBottom: 170,
   },
 });
