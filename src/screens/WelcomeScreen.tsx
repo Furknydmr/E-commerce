@@ -33,6 +33,7 @@ const WelcomeScreen = () => {
           <TextInput
             style={styles.input}
             placeholder="E-posta"
+            placeholderTextColor="#5C635A"
             keyboardType="email-address"
             onChangeText={(text) => setEmail(text)}
             value={email}
@@ -43,6 +44,7 @@ const WelcomeScreen = () => {
           <TextInput
             style={styles.input}
             placeholder="Şifre"
+            placeholderTextColor="#5C635A"
             secureTextEntry
             onChangeText={(text) => setPassword(text)}
             value={password}
@@ -117,6 +119,7 @@ const styles = StyleSheet.create({
       paddingHorizontal: 20,
       fontSize: 17,
       backgroundColor: '#fff',
+      color: '#000000',
     },
     button: {
       height: 50,
