@@ -20,6 +20,7 @@ const ResetPasswordScreen = () => {
           <TextInput
             style={styles.input}
             placeholder="E-posta"
+            placeholderTextColor="#5C635A"
             keyboardType="email-address"
             onChangeText={(text) => setEmail(text)}
             value={email}
@@ -80,6 +81,7 @@ const styles = StyleSheet.create({
     paddingHorizontal: 15,
     fontSize: 16,
     backgroundColor: '#fff',
+    color: '#000000',
   },
   button: {
     height: 50,
