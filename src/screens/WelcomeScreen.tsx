@@ -18,7 +18,7 @@ const WelcomeScreen = () => {
     const [password, setPassword] = useState('');
     useEffect(() => {
       if (isFocused) {
-        // Reset the form when the screen is focused
+        
         setEmail('');
         setPassword('');
       }
