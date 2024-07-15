@@ -56,6 +56,7 @@ const PaymentScreen = () => {
       <TextInput
         style={styles.input}
         placeholder="Kart Üzerindeki İsim"
+        placeholderTextColor="#5C635A"
         value={cardName}
         onChangeText={useformatCardName}
       />
@@ -63,6 +64,7 @@ const PaymentScreen = () => {
         style={styles.input}
         placeholder="Kart Numarası"
         keyboardType="numeric"
+        placeholderTextColor="#5C635A"
         value={cardNumber}
         maxLength={16}
         onChangeText={useFormatCardNumber}
@@ -72,6 +74,7 @@ const PaymentScreen = () => {
           style={[styles.input, styles.lastDate]}
           placeholder="Son Kullanma Tarihi (MM/YY)"
           keyboardType="numeric"
+          placeholderTextColor="#5C635A"
           value={expiryDate}
           maxLength={5}
           onChangeText={useExpiryDateChange}
@@ -80,6 +83,7 @@ const PaymentScreen = () => {
           style={[styles.input, styles.cvv]}
           placeholder="CVV"
           keyboardType="numeric"
+          placeholderTextColor="#5C635A"
           maxLength={3}
           value={cvv}
           onChangeText={setCvv}
@@ -87,7 +91,7 @@ const PaymentScreen = () => {
       </View>
       
     </ScrollView>
-      <Text>Ödecenek Tutar: {totalAmount}TL </Text>
+      <Text style={{color: '#000000'}}>Ödecenek Tutar: {totalAmount}TL </Text>
       <View style={styles.buttonContainer}>
         <Button title="Ödeme Yap" onPress={handlePayment} />
       </View>
@@ -109,6 +113,7 @@ const styles = StyleSheet.create({
     fontSize: 24,
     fontWeight: 'bold',
     marginBottom: 20,
+    color: '#000000',
   },
   input: {
     height: 50,
@@ -131,6 +136,7 @@ const styles = StyleSheet.create({
   },
   buttonContainer: {
     padding: 16,
+     marginBottom:30,
   },
 });
 
