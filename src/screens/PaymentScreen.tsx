@@ -122,6 +122,7 @@ const styles = StyleSheet.create({
     borderRadius: 5,
     paddingHorizontal: 10,
     marginBottom: 15,
+    color: '#000000',
   },
   row: {
     flexDirection: 'row',
